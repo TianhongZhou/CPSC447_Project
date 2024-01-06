@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3 Project Starter Template</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>   
+    <!-- Main content container -->
+    <div class="content-container">
+        <!-- Header and Overview Section -->
+        <div>
+            <h1 class="header">Pokémon: Types and Stats</h1>
+            <p class="overview">With the increasing number of Pokémon and the increasing generations, 
+                it's getting more difficult to build a powerful and desired Pokemon team
+                by simply looking through Pokédex. We hope our visualization helps you 
+                understand type effectiveness between Pokemon and how each Pokemon's 
+                base stats change over the evolution chain! Hover and click through our 
+                visualizations to explore interesting dependencies between Pokemon types, 
+                base stats, type effectiveness. Click on any blank space for “XXX Pokemon 
+                Base Stats Distribution” for returning back to “Pokemon Type Distribution II”. 
+                Click on any blank space for “Pokemon Type Distribution I” to clear all selections.</p>
+            <!-- Generation Selection Dropdown -->
+            <div id="generation-selector-container">
+                <label for="generation-selector">Generation Selection:</label>
+                <select id="generation-selector">
+                    <option value="all">All Generations</option>
+                    <option value="1">Generation 1</option>
+                    <option value="2">Generation 2</option>
+                    <option value="3">Generation 3</option>
+                    <option value="4">Generation 4</option>
+                    <option value="5">Generation 5</option>
+                    <option value="6">Generation 6</option>
+                    <option value="7">Generation 7</option>
+                </select>
+            </div>
+        </div>
+        <!-- Top container for charts -->
+        <div class="top-container">
+            <div id="point-chart"></div>
+            <svg id="total-base-line-chart"></svg>
+        </div>
+    </div>
+    <!-- Bottom container for additional charts -->
+    <div class="container">
+            <div class="bottom-rhs-container">
+                <div id="heatmap"></div>
+                <div id="bar-graph"></div>
+                <svg id="task1"></svg>
+                <svg id="separate-base-line-chart"></svg>
+            </div>
+    </div>
+
+    <!-- Tooltip containers -->
+    <div id="tooltip"></div>
+    <div id="info-tooltip"></div>
+    <div id="heatmap-tooltip"></div>
+    
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+    <!-- Our JS code -->
+    <script src="js/totalBaseLineChart.js"></script>
+    <script src="js/separateBaseLineChart.js"></script>
+    <script src="js/forceDirectedGraph.js"></script>
+    <script src="js/linkedGraph.js"></script>
+    <script src="js/pointChart.js"></script>
+    <script src="js/barGraph.js"></script>
+    <script src="js/hexbinGraph.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

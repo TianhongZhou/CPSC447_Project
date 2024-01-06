@@ -1,0 +1,165 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    font-size: 41px;
+    margin-top: -2%;
+}
+
+.overview {
+    width: 520px;
+    margin-top: -1%;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5; 
+    text-align: justify; 
+    hyphens: auto;
+}
+
+#generation-selector-container {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#generation-selector-container label {
+    margin-right: 8px;
+}
+
+#generation-selector {
+    font-size: 14px; 
+    padding: 5px 10px; 
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+}
+
+.top-container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.bottom-rhs-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#point-chart .tick text {
+    font-size: 0
+}
+
+.point-chart-title {
+    font-size: 15px;    
+    font-weight: bold;
+}
+
+#task1 {
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+#separate-base-line-chart {
+    margin-left: 10px;
+}
+
+#bar-graph {
+    display: flex;
+    margin-left: 5px;
+    margin-top: -20px;
+    align-items: center;
+}
+
+.bar-graph-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bar-graph-subtitle {
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.bar:hover {
+    stroke: #7d7d96;
+    stroke-width: 0.5px;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px;
+    min-width: 100px;
+}
+
+.tooltip-leader {
+    font-weight: 700;
+}
+
+#info-tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px;
+    color: #333;
+}
+
+.info-tooltip-list {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.info-tooltip-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#heatmap {
+    margin-top: 10px;
+}
+
+/* Tooltip */
+#heatmap-tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    min-width: 100px;
+    color: #333;
+}
+
+.highlighted-cell {
+    stroke: #000;
+    stroke-width: 1px;
+}
